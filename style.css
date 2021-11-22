@@ -1,0 +1,166 @@
+/* Styles for whole page */
+
+body {
+  background-color: hsl(217, 54%, 11%);
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+  font-family: Outfit, sans-serif;
+  font-weight: 300;
+  margin: 0 auto;
+}
+
+/* Defining card size and position */
+
+#card {
+  background-color: hsl(216, 50%, 16%);
+  max-width: 320px;
+  margin: 120px auto 0px;
+  position: relative;
+  padding: 25px;
+  border-radius: 20px;
+}
+
+/* Main card content*/
+
+.images {
+  position: relative;
+}
+
+.nftImage {
+  border-radius: 10px;
+  position: relative;
+  width: 100%;
+  margin: 0;
+}
+
+.nftImage:hover {
+  cursor: pointer;
+}
+
+.nftImageOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70px;
+  opacity: 0;
+  padding: 134px 126px;
+  border-radius: 10px;
+  background-color: hsla(178, 100%, 50%, 0.336);
+  transition: all 0.2s ease-in-out;
+}
+
+.nftImageOverlay:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+h1 {
+  color: white;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+h1:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+/* price and clock variables */
+
+.eth {
+  color: hsl(178, 100%, 50%);
+  font-weight: 400;
+}
+
+.eth-image {
+  margin-right: 8px;
+  top: 2px;
+  position: relative;
+}
+
+.clock {
+  position: absolute;
+  right: 25px;
+}
+
+.clock-image {
+  margin-right: 8px;
+}
+/* Author Section*/
+
+hr {
+  border-color: hsl(215, 51%, 70%);
+  margin-top: 25px;
+  border-bottom: none;
+  border-width: thin;
+}
+
+#author {
+margin-top: 20px;
+}
+
+.avatar {
+  max-width: 12%;
+  margin-right: 20px;
+}
+
+.author-text {
+  position: relative;
+  bottom: 13px;
+}
+
+.author-text a {
+  text-decoration: none;
+  color: white;
+}
+
+.author-text a:hover {
+  cursor: pointer;
+  color: hsl(178, 100%, 50%);
+}
+
+/*Credits*/
+
+.attribution {
+  max-width: 330px;
+  margin: 25px auto 0;
+  font-size: 12px;
+}
+
+.attribution a {
+  text-decoration: none;
+  color: white;
+}
+
+@media (max-width: 375px) {
+  #wrapper {
+    max-width: 75%;
+    margin-top: 60px;
+    font-size: 17px;
+  }
+
+  .Main {
+    margin-top: 15px;
+  }
+
+  .detials {
+    margin-top: 0px;
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  hr {
+    margin-top: 13px;
+  }
+
+  .avatar {
+    border: 1px solid white;
+  }
+
+  .authorr-text {
+    font-size: 16px;
+  }
+
+.nftImageOverlay {
+  padding: 115px 117px;
+}
+}
